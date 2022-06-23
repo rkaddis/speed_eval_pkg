@@ -9,6 +9,8 @@ Run program with: $ roslaunch speed_eval_pkg speed_eval.launch <br>
 Requires '/vehicle/steering_report' messages from dbw_polaris_msgs.
 <br> <br>
 <b> Use </b> <br>
+If using in real time and not with a .bag file, be sure to remove the comments around the "included" DBW launch file
+in ./launch/speed_eval.launch. <br>
 After launching, a dynamic reconfigure window will open. <br>
 The 'max_speed' slider can be configured to set the speed limit for the course. The unit is mph. <br>
 Check the 'start_test' box to begin testing. The program will only start evaluating vehicle data until the vehicle

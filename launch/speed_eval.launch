@@ -1,0 +1,9 @@
+<launch>
+
+    <!--include file="$(find dbw_polaris_can)/launch/dbw.launch" /-->
+
+    <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_console" args="-t" />
+    
+    <node pkg="speed_eval_pkg" type="speed_eval.py" name="speed_eval" required="true" output="screen" />
+    
+</launch> 
